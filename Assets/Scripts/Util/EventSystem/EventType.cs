@@ -2,9 +2,11 @@
 {
 	public enum EventType
 	{
-		GameSave,
-		GameLoad,
+		StageLoad,
+		StageInit,
 		GameStart,
-		GameOver
+		GameOver,
+		DataSave,
+		DataLoad
 	}
 }
