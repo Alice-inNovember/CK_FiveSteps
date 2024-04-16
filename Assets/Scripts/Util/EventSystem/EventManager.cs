@@ -28,6 +28,7 @@ namespace Util.EventSystem
 
 		public void AddListener(EventType eventType, IEventListener listener)
 		{
+			// Debug.Log("AddListener : " + eventType);
 			if (_listeners.TryGetValue(eventType, out var listenList))
 			{
 				listenList.Add(listener);

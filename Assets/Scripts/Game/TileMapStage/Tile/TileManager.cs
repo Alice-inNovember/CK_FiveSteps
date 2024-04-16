@@ -5,11 +5,17 @@ using Util.EventSystem;
 using Util.SingletonSystem;
 using EventType = Util.EventSystem.EventType;
 
-namespace TileMapStage.Tile
+namespace Game.TileMapStage.Tile
 {
 	public class TileManager : MonoBehaviourSingleton<TileManager>, IEventListener
 	{
 		private Dictionary<Vector3Int, Tile> _tiles;
+
+		public void Start()
+		{
+			_tiles = new Dictionary<Vector3Int, Tile>();
+			EventManager.Instance.AddListener(EventType.StageLoad, this);
+		}
 
 		public void OnEvent(EventType eventType, Component sender, object param = null)
 		{

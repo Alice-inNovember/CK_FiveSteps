@@ -1,4 +1,4 @@
-﻿namespace TileMapStage.Tile
+﻿namespace Game.TileMapStage.Tile
 {
 	public enum TileStatus
 	{
