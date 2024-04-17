@@ -25,7 +25,9 @@ namespace Util.CustomTransformEditor
 		{
 			_transform = target as Transform;
 
-			_refreshTexture = AssetDatabase.LoadAssetAtPath("Assets/Scripts/Util/CustomTransformEditor/EditorResources/Refresh.png", typeof(Texture2D)) as Texture2D;
+			_refreshTexture =
+				AssetDatabase.LoadAssetAtPath("Assets/Scripts/Util/CustomTransformEditor/EditorResources/Refresh.png",
+					typeof(Texture2D)) as Texture2D;
 
 			// 치트키 : 기존 TransformEditor로부터 RotationField 빌려쓰기
 			if (_localRotationGUI == null)

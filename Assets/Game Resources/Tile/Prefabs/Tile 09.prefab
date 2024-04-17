@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -973770217047343647, guid: c9c0b7092cd566a48a477d71dc79ab7c,
+        type: 3}
+      propertyPath: status
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 625153449181913391, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -61,13 +66,13 @@ PrefabInstance:
     - target: {fileID: 7450464787800500985, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
       propertyPath: m_Name
-      value: Tile 01
+      value: Tile 09
       objectReference: {fileID: 0}
     - target: {fileID: 8930889987857916712, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 12e40db7737867149bf808b4a3882672, type: 2}
+      objectReference: {fileID: 2100000, guid: a47941485a9d65549bdeb3de4162a100, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

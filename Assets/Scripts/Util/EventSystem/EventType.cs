@@ -6,6 +6,7 @@
 		StageInit,
 		GameStart,
 		GameOver,
+		TileClicked,
 		DataSave,
 		DataLoad
 	}

@@ -15,6 +15,7 @@ namespace Game.TileMapStage.Tile
 		{
 			_tiles = new Dictionary<Vector3Int, Tile>();
 			EventManager.Instance.AddListener(EventType.StageLoad, this);
+			EventManager.Instance.AddListener(EventType.TileClicked, this);
 		}
 
 		public void OnEvent(EventType eventType, Component sender, object param = null)
@@ -34,11 +35,21 @@ namespace Game.TileMapStage.Tile
 					break;
 				case EventType.DataLoad:
 					break;
+				case EventType.TileClicked:
+					ResetTileHighlight();
+					break;
 				default:
 					throw new ArgumentOutOfRangeException(nameof(eventType), eventType, null);
 			}
 		}
 
+		private void ResetTileHighlight()
+		{
+			foreach (var tile in _tiles)
+			{
+				tile.Value.HighlightReset();
+			}
+		}
 		private void ResetTileDictionary()
 		{
 			_tiles = null;
