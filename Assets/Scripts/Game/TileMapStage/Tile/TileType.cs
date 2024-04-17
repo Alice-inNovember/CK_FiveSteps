@@ -1,9 +1,10 @@
 ﻿namespace Game.TileMapStage.Tile
 {
-	public enum TileStatus
+	public enum TileType
 	{
 		Walkable,
 		Blocked,
-		Stairs
+		Stair,
+		StairFloor
 	}
 }

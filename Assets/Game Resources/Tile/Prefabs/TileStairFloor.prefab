@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4614801299368190170
+--- !u!1001 &2327961853774688799
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,8 +10,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -973770217047343647, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
-      propertyPath: status
-      value: 1
+      propertyPath: type
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 625153449181913391, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
@@ -66,13 +66,13 @@ PrefabInstance:
     - target: {fileID: 7450464787800500985, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
       propertyPath: m_Name
-      value: Tile 09
+      value: TileStairFloor
       objectReference: {fileID: 0}
     - target: {fileID: 8930889987857916712, guid: c9c0b7092cd566a48a477d71dc79ab7c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a47941485a9d65549bdeb3de4162a100, type: 2}
+      objectReference: {fileID: 2100000, guid: 55bb9321ecbfcbf4fad9c05ccdefe309, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

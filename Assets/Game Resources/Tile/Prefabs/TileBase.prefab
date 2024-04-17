@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8930889987857916712}
   - component: {fileID: 1172197427845703402}
   m_Layer: 0
-  m_Name: BaseTile
+  m_Name: TileBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c2abf56a1aa4c499b592e5222f99fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  status: 0
+  type: 0
+  targetPosition: {x: 0, y: 0, z: 0}
+  topTile: {fileID: 0}
+  bottomTile: {fileID: 0}
 --- !u!65 &8288428396284731249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -98,7 +101,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1d73b90e6a63d6b418bf0b867acaf607, type: 2}
+  - {fileID: 2100000, guid: a47941485a9d65549bdeb3de4162a100, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
