@@ -10,7 +10,7 @@ namespace Game.TileMapStage.Player
 		{
 			var dist = Vector3Int.Distance(Vector3Int.FloorToInt(transform.position), pos);
 			transform.DOPause();
-			transform.DOMove(pos, dist * 0.5f).SetEase(Ease.Linear);
+			transform.DOMove(pos, dist * 0.2f).SetEase(Ease.Linear);
 		}
 	}
 }
